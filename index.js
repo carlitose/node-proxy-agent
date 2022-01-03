@@ -141,7 +141,7 @@ function mapOptsToProxy(opts) {
  * @api public
  */
 
-function ProxyAgent (opts) {
+function ProxyAgent (opts, protocol) {
   if (!(this instanceof ProxyAgent)) return new ProxyAgent(opts);
   debug('creating new ProxyAgent instance: %o', opts);
   Agent.call(this);
@@ -151,6 +151,9 @@ function ProxyAgent (opts) {
     this.proxy = proxy.opts;
     this.proxyUri = proxy.uri;
     this.proxyFn = proxy.fn;
+  }
+  if(protocol){
+    this.protocol = protocol
   }
 }
 inherits(ProxyAgent, Agent);
