@@ -8,8 +8,8 @@ declare module ProxyAgent {
 declare const proxy: ProxyAgentConstructor;
 
 interface ProxyAgentConstructor {
-    (options?: AgentOptions | string, protocol?:string): ProxyAgent.ProxyAgent;
-    new (options?: AgentOptions | string, protocol?:string): ProxyAgent.ProxyAgent;
+    (options?: AgentOptions | string, agentProtocol?:string): ProxyAgent.ProxyAgent;
+    new (options?: AgentOptions | string, agentProtocol?:string): ProxyAgent.ProxyAgent;
 }
 
 export = proxy;
