@@ -1,6 +1,6 @@
 {
-  "name": "proxy-agent",
-  "version": "5.0.0",
+  "name": "@klarna/proxy-agent",
+  "version": "5.0.1",
   "description": "Maps proxy protocols to `http.Agent` implementations",
   "main": "index.js",
   "scripts": {
@@ -8,10 +8,6 @@
   },
   "engines": {
     "node": ">= 8"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/TooTallNate/node-proxy-agent.git"
   },
   "keywords": [
     "http",
@@ -44,5 +40,8 @@
     "proxy": "^1.0.1",
     "socksv5": "0.0.6",
     "stream-to-buffer": "0.1.0"
+  },
+  "publishConfig": {
+    "registry": "https://artifactory.klarna.net/artifactory/api/npm/l-npm-proxyagent-kep-portal-production"
   }
 }
