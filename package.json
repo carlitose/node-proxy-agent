@@ -42,6 +42,6 @@
     "stream-to-buffer": "0.1.0"
   },
   "publishConfig": {
-    "registry": "https://artifactory.klarna.net/artifactory/api/npm/l-npm-proxyagent-kep-portal-production"
+    "registry": "https://artifactory.klarna.net/artifactory/api/npm/l-npm-kep-portal-production"
   }
 }
